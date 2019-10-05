@@ -1,19 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 header {
   padding: 2em 0;
   background: #f8f8f8;
-}
-
-h1 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #143774;
-  margin: 0;
 }
 
 nav ul {
@@ -27,10 +18,28 @@ nav li {
 }
 
 nav a {
+  padding: .25rem 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* ==============
+Typograhy
+============== */
+
+body {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: #707070;
+}
+
+nav a {
   text-decoration: none;
   font-weight: 700;
   color: #707070;
-  padding: .25rem 0;
 }
 
 nav a:hover,
@@ -38,6 +47,64 @@ nav a:focus {
   color: #1792d2;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: .75rem;
+}
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-info,
+.article-read-more {
+  font-size: .875rem;
+}
+
+.article-read-more {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  text-decoration: underline;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+/* ==============
+Layout
+============== */
 .container {
   width: 90%;
   max-width: 900px;
@@ -50,18 +117,11 @@ nav a:focus {
 }
 
 .subtitle {
-  font-weight: 700;
-  color: #1792d2;
-  font-size: .75rem;
   margin: 0;
 }
 
 .current-page {
   border-bottom: 1px solid #707070;
-}
-
-.current-page:hover {
-  color: #707070;
 }
 
 @media (max-width: 700px) {
