@@ -6,6 +6,7 @@ header {
   padding: 2em 0;
   background: #f8f8f8;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 nav ul {
@@ -115,6 +116,17 @@ strong {
   color: #707070;
 }
 
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1.125rem;
+}
+
+.widget-title {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* ==============
 Layout
 ============== */
@@ -136,6 +148,31 @@ Layout
 
 .current-page {
   border-bottom: 1px solid #707070;
+}
+
+.sidebar-widget {
+  border: 20px solid #EBEBEB;
+  margin-bottom: 2em;
+  padding: 1.38em;
+}
+
+.sidebar-widget p {
+  font-size: .875rem;
+  color: #143774;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-recent-post:not(:last-child) {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+}
+
+.widget-image {
+  order: -1;
 }
 
 @media (max-width: 725px) {
@@ -160,6 +197,8 @@ Layout
 
   aside {
     width: 25%;
+    min-width: 210px;
+    margin-left: 1em;
   }
 }
 
@@ -180,6 +219,7 @@ Layout
 .article-recent {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em;
 }
 
 .article-recent-main {
