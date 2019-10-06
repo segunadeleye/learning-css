@@ -123,12 +123,12 @@ strong {
   color: #707070;
 }
 
-.widget-title,
 .widget-recent-post-title {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .widget-title {
+  font-size: 1.125rem;
   font-family: Ubuntu, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -179,6 +179,7 @@ Layout
 }
 
 .widget-image {
+  margin-bottom: 1em;
   order: -1;
 }
 
@@ -221,6 +222,8 @@ Layout
   border-bottom: #707070 1px solid;
   padding-bottom: 2em;
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .article-recent {
@@ -237,6 +240,14 @@ Layout
   order: 1;
 }
 
+.article-image {
+  order: -2;
+}
+
+.article-info {
+  order: -1;
+}
+
 @media (min-width: 675px) {
   .article-recent {
     flex-direction: row;
@@ -251,16 +262,9 @@ Layout
     width: 30%;
   }
 
-  .article-featured {
-    display: flex;
-    flex-direction: column;
-  }
-
   .article-image {
-    order: -2;
-  }
-
-  .article-info {
-    order: -1;
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
   }
 }
