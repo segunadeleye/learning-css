@@ -9,6 +9,13 @@ header {
   margin-bottom: 2em;
 }
 
+footer {
+  background: #143774;
+  padding: 3em 0;
+  text-align: center;
+  color: #ffffff;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
