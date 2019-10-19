@@ -190,6 +190,12 @@ Layout
   }
 }
 
+@media (max-width: 674px) {
+  nav li {
+    margin: .5em .5em
+  }
+}
+
 @media (min-width: 675px) {
   .container-flex {
     flex-direction: row;
