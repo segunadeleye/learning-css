@@ -1,9 +1,93 @@
+body {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
+}
+
+
+/* Layout */
+
+header {
+  background: #F8F8F8;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding-bottom: 2em;
+}
+
+nav ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav ul li.active span {
+  border-bottom: 2px #717171 solid;
+  padding-bottom: .1em;
 }
 
 .container {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo .title,
+.logo .subtitle {
+  margin: 0;
+}
+
+
+/* Typography */
+
+body {
+  font-size: 16px;
+  font-family: Ubuntu, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Lora, serif;
+  font-weight: 100;
+  color: #143774;
+}
+
+nav ul {
+  font-weight: 600;
+  color: #717171;
+  text-transform: uppercase;
+}
+
+.logo .title {
+  font-size: 2rem;
+}
+
+.logo .subtitle {
+  color: #1792D2;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
