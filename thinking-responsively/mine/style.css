@@ -11,6 +11,7 @@ img {
 
 header {
   background: #F8F8F8;
+  padding: 4em 0;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav ul li:last-child {
   padding-bottom: 0;
 }
 
-nav ul li.active span {
+nav ul li.active a {
   border-bottom: 2px #717171 solid;
   padding-bottom: .1em;
 }
@@ -47,7 +48,22 @@ nav ul li.active span {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 2em 0;
+}
+
+@media (min-width: 700px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin-left: 1.5em;
+    padding: 0;
+  }
 }
 
 .logo {
@@ -78,6 +94,11 @@ nav ul {
   font-weight: 600;
   color: #717171;
   text-transform: uppercase;
+}
+
+nav ul li a {
+  color: #717171;
+  text-decoration: none;
 }
 
 .logo .title {
