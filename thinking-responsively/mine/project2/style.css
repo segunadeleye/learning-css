@@ -12,6 +12,7 @@ img {
 header {
   background: #F8F8F8;
   padding: 4em 0;
+  margin-bottom: 3em;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav ul li.active a {
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -48,6 +49,46 @@ nav ul li.active a {
 .header {
   display: flex;
   flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo .title,
+.logo .subtitle {
+  margin: 0;
+}
+
+.article-featured {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-info {
+  margin: 2rem 0;
+}
+
+.article-title {
+  margin: 0;
+}
+
+.article-image {
+  order: -1
+}
+
+.article-info {
+  order: -1
+}
+
+.article-body {
+  margin: 1.5em 0;
 }
 
 @media (min-width: 700px) {
@@ -66,15 +107,6 @@ nav ul li.active a {
   }
 }
 
-.logo {
-  text-align: center;
-}
-
-.logo .title,
-.logo .subtitle {
-  margin: 0;
-}
-
 
 /* Typography */
 
@@ -88,6 +120,12 @@ h2 {
   font-family: Lora, serif;
   font-weight: 100;
   color: #143774;
+}
+
+p {
+  color: #707070;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 
 nav ul {
@@ -111,4 +149,21 @@ nav ul li a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+}
+
+.article-info {
+  font-size: 0.875rem;
+  color: #707070;
+}
+
+.article-body a {
+  color: #1792D2;
+}
+
+.article-read-more {
+  font-size: 0.875rem;
+  color: #1792D2;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
 }
