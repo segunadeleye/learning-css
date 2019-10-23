@@ -46,7 +46,7 @@ nav ul li.active a {
   margin: 0 auto;
 }
 
-.header {
+.container-flex {
   display: flex;
   flex-direction: column;
 }
@@ -68,9 +68,11 @@ nav ul li.active a {
   margin-bottom: 2em;
 }
 
+.article-featured .article-image {
+  object-position: bottom;
+}
+
 .article-recent {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 2em;
 }
 
@@ -86,10 +88,15 @@ nav ul li.active a {
   order: -2;
   height: 43vw;
   object-fit: cover;
+  width: 100%;
 }
 
 .article-info {
   order: -1
+}
+
+.article-recent-aside {
+  order: -2;
 }
 
 .article-body {
@@ -145,9 +152,14 @@ nav ul li.active a {
 }
 
 @media (min-width: 700px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 25%;
+    margin-left: 1em;
+    min-width: 200px;
   }
 
   nav ul {
@@ -157,6 +169,40 @@ nav ul li.active a {
   nav ul li {
     margin-left: 1.5em;
     padding: 0;
+  }
+
+  .container-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-featured .article-image {
+    height: 300px;
+  }
+
+  .article-recent .article-image {
+    height: 242px;
+  }
+
+  .article-recent-main {
+    width: 65%;
+  }
+
+  .article-recent-aside {
+    width: 30%;
+  }
+
+  .widget-about-me {
+    padding: 1.5em 1.5em 0 1.5em;
+  }
+
+  .widget-about-me .widget-title {
+    display: block;
+  }
+
+  .widget-article-image,
+  .widget-about-me-image {
+    height: unset;
   }
 }
 
@@ -231,7 +277,7 @@ nav ul li a {
 }
 
 .widget-about-me p {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .widget-article-title {
