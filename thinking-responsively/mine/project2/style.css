@@ -40,6 +40,16 @@ nav ul li.active a {
   padding-bottom: .1em;
 }
 
+footer {
+  background: #143774;
+  padding: 3em 0;
+  margin-top: 1em;
+}
+
+footer p {
+  margin: 0;
+}
+
 .container {
   width: 92%;
   max-width: 900px;
@@ -73,11 +83,12 @@ nav ul li.active a {
 }
 
 .article-recent {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .article-info {
-  margin: 2rem 0;
+  margin: 1em 0;
+  order: -1
 }
 
 .article-title {
@@ -89,10 +100,6 @@ nav ul li.active a {
   height: 43vw;
   object-fit: cover;
   width: 100%;
-}
-
-.article-info {
-  order: -1
 }
 
 .article-recent-aside {
@@ -237,6 +244,14 @@ nav ul {
 nav ul li a {
   color: #717171;
   text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: #ffffff;
 }
 
 .logo .title {
