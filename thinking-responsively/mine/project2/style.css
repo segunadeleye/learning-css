@@ -43,7 +43,7 @@ nav ul li.active a {
 footer {
   background: #143774;
   padding: 3em 0;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 footer p {
@@ -61,6 +61,11 @@ footer p {
   flex-direction: column;
 }
 
+.article-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   text-align: center;
 }
@@ -68,6 +73,26 @@ footer p {
 .logo .title,
 .logo .subtitle {
   margin: 0;
+}
+
+.full-article {
+  margin-bottom: 3em;
+}
+
+.full-article h2 {
+  margin-top: 0;
+}
+
+.full-article p {
+  margin-top: 0;
+}
+
+.full-article .article-image {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
+  order: -1;
 }
 
 .article-featured {
@@ -246,6 +271,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #1792D2;
+}
+
 footer {
   text-align: center;
 }
@@ -282,6 +311,15 @@ footer p {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.175rem;
+}
+
+.full-article h1 {
+  font-size: 1.5rem;
+}
+
+.full-article h2 {
+  font-size: 1.3125rem;
+  color: #1792D2;
 }
 
 .widget-title {
